@@ -50,16 +50,16 @@ window.onload = function () {
 
     // Load images
     birdImg = new Image();
-    birdImg.src = "./flappybird.gif";
+    birdImg.src = "./img/flappybird.gif";
     birdImg.onload = function () {
         context.drawImage(birdImg, bird.x, bird.y, bird.width, bird.height);
     };
 
     topPipeImg = new Image();
-    topPipeImg.src = "./toppipe.png";
+    topPipeImg.src = "./img/toppipe.png";
 
     bottomPipeImg = new Image();
-    bottomPipeImg.src = "./bottompipe.png";
+    bottomPipeImg.src = "./img/bottompipe.png";
 
     // 🎮 Button listeners
     document.getElementById("playBtn").addEventListener("click", () => {
@@ -262,7 +262,7 @@ function pauseGameForQuestion() {
     let btn = document.getElementById("submitAnswer");
 
     qText.innerText = `Solve this: ${num1} + ${num2} = ?`;
-    document.querySelector(".modal-image").src = "bird.jpg";
+    document.querySelector(".modal-image").src = "./img/bird.jpg";
     input.value = "";
     modal.style.display = "flex";  // show modal
 
